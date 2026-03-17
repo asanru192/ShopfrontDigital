@@ -146,4 +146,7 @@ document.querySelectorAll('.pricing-card').forEach(card => {
   });
 });
 
+// ===== INITIALIZE LUCIDE ICONS =====
+lucide.createIcons();
+
 console.log('%c🟢 Shopfront Digital — Website Loaded', 'color:#c8f65e; font-size:14px; font-weight:bold;');
