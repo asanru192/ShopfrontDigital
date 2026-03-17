@@ -8,39 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./output.css" />
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              navy: '#0A2540',
-              blue: '#0066FF',
-              light: '#F8FAFC',
-              accent: '#F97316',
-            }
-          },
-          fontFamily: {
-            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
-            body: ['"Inter"', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style type="text/tailwindcss">
-    @layer base {
-      body {
-        @apply font-body text-slate-600 bg-white antialiased;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        @apply font-heading text-brand-navy tracking-tight;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -70,7 +39,7 @@
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     <!-- Left Column: Copy & CTAs -->
     <div>
-      <h1 class="text-5xl lg:text-6xl font-heading font-extrabold text-brand-navy leading-tight">
+      <h1 class="text-5xl lg:text-6xl font-heading font-extrabold text-[#0A2540] leading-tight">
         Stop Losing Local Customers.<br />
         Get a Professional Digital Shopfront for Just <span class="text-brand-blue">£35/Month</span>.
       </h1>
@@ -80,7 +49,7 @@
       </p>
       
       <div class="mt-8 flex flex-col sm:flex-row gap-4">
-        <a href="#pricing" class="px-8 py-4 bg-brand-blue hover:bg-blue-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl text-center">
+        <a href="#pricing" class="px-8 py-4 bg-[#0066FF] hover:bg-blue-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl text-center">
           Get Your Business Online Today
         </a>
         <a href="#how-it-works" class="px-8 py-4 bg-white border-2 border-slate-200 hover:border-brand-navy text-brand-navy font-semibold rounded-lg transition-all text-center">
