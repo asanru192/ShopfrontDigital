@@ -7,9 +7,8 @@
   <meta name="description" content="Shopfront Digital builds, hosts, and manages beautiful, fast websites for local UK businesses. Get online for just £35/month. No upfront fees, no technical headaches." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./output.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -36,53 +35,45 @@
   </nav>
 
   <!-- ========== HERO ========== -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    <!-- Left Column: Copy & CTAs -->
-    <div>
-      <h1 class="text-5xl lg:text-6xl font-heading font-extrabold text-[#0A2540] leading-tight">
+  <section id="hero">
+    <div class="hero-bg-image"></div>
+    <div class="hero-noise"></div>
+    <div class="container hero-content">
+      <div class="hero-badge animate-fade-up">
+        <span class="badge-dot"></span>
+        <span>Professional Digital Presence for Local Businesses</span>
+      </div>
+      <h1 class="hero-heading animate-fade-up delay-1">
         Stop Losing Local Customers.<br />
-        Get a Professional Digital Shopfront for Just <span class="text-brand-blue">£35/Month</span>.
+        <span class="accent">Get a Professional Digital<br />Shopfront for Just £35/Month.</span>
       </h1>
-      <p class="mt-6 text-lg text-slate-600 font-body max-w-lg">
-        No massive upfront agency fees. No technical headaches. 
+      <p class="hero-sub animate-fade-up delay-2">
+        No massive upfront agency fees. No technical headaches.<br />
         We build, host, and manage a beautiful, fast website for your local business while you focus on running it.
       </p>
-      
-      <div class="mt-8 flex flex-col sm:flex-row gap-4">
-        <a href="#pricing" class="px-8 py-4 bg-[#0066FF] hover:bg-blue-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl text-center">
-          Get Your Business Online Today
-        </a>
-        <a href="#how-it-works" class="px-8 py-4 bg-white border-2 border-slate-200 hover:border-brand-navy text-brand-navy font-semibold rounded-lg transition-all text-center">
-          Learn More
-        </a>
+      <div class="hero-ctas animate-fade-up delay-3">
+        <a href="#pricing" class="btn-primary">Get Your Business Online Today</a>
+        <a href="#how-it-works" class="btn-ghost">Learn More →</a>
       </div>
-
-      <!-- Trust Badge -->
-      <div class="mt-6 flex items-center gap-3">
-        <div class="flex items-center gap-1">
-          <svg class="w-5 h-5 text-[#FBBF24]" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-          <svg class="w-5 h-5 text-[#FBBF24]" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-          <svg class="w-5 h-5 text-[#FBBF24]" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-          <svg class="w-5 h-5 text-[#FBBF24]" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
-          <svg class="w-5 h-5 text-[#FBBF24]" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-          </svg>
+      <div class="hero-stats animate-fade-up delay-4">
+        <div class="stat">
+          <span class="stat-num">48hr</span>
+          <span class="stat-label">Build Time</span>
         </div>
-        <span class="text-sm font-medium text-slate-500">Trusted by 100+ Local Businesses</span>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">£35</span>
+          <span class="stat-label">Per Month</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100+</span>
+          <span class="stat-label">Sites Built</span>
+        </div>
       </div>
     </div>
-
-    <!-- Right Column: Visual Mockup -->
-    <div class="relative w-full aspect-square lg:aspect-video rounded-2xl overflow-hidden shadow-2xl bg-brand-light border border-slate-100 flex items-center justify-center">
-      <span class="text-slate-400 font-medium">Device Mockup Graphic Here</span>
+    <div class="hero-scroll-hint">
+      <div class="scroll-wheel"></div>
     </div>
   </section>
 
@@ -118,85 +109,30 @@
       <div class="section-label animate-in">• WHO WE HELP</div>
       <h2 class="section-heading animate-in">Experience the Benefits<br />of Our Expertise</h2>
       <p class="section-sub animate-in">Built specifically for local independent businesses that drive impactful gain and powerful results.</p>
-      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Card 1: Hair & Beauty -->
-        <div class="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-            <i data-lucide="scissors" size="24"></i>
-          </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Hair & Beauty</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">Beautiful portfolios and easy-to-find contact details to keep those chairs full.</p>
-          <a href="#pricing" class="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-blue-700">See Pricing →</a>
+      <div class="benefits-grid">
+        <div class="benefit-card animate-in">
+          <div class="benefit-icon">✂️</div>
+          <h3>Hair &amp; Beauty</h3>
+          <p>Beautiful portfolios and easy-to-find contact details to keep those chairs full.</p>
+          <a href="#pricing" class="card-link">See Pricing →</a>
         </div>
-
-        <!-- Card 2: Trades & Construction -->
-        <div class="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-            <i data-lucide="hammer" size="24"></i>
-          </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Trades & Construction</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">Showcase your latest projects and build trust with new clients instantly.</p>
-          <a href="#pricing" class="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-blue-700">See Pricing →</a>
+        <div class="benefit-card animate-in delay-1">
+          <div class="benefit-icon">🔨</div>
+          <h3>Trades &amp; Construction</h3>
+          <p>Showcase your latest projects and build trust with new clients instantly.</p>
+          <a href="#pricing" class="card-link">See Pricing →</a>
         </div>
-
-        <!-- Card 3: Automotive & Mechanics -->
-        <div class="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-            <i data-lucide="car" size="24"></i>
-          </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Automotive & Mechanics</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">Clear services and booking information for when they need you most.</p>
-          <a href="#pricing" class="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-blue-700">See Pricing →</a>
+        <div class="benefit-card animate-in delay-2">
+          <div class="benefit-icon">🚗</div>
+          <h3>Automotive &amp; Mechanics</h3>
+          <p>Clear services and booking information for when they need you most.</p>
+          <a href="#pricing" class="card-link">See Pricing →</a>
         </div>
-
-        <!-- Card 4: Hospitality & Cafes -->
-        <div class="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-            <i data-lucide="coffee" size="24"></i>
-          </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Hospitality & Cafes</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">Mouth-watering menus and clear opening times on any device.</p>
-          <a href="#pricing" class="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-blue-700">See Pricing →</a>
-        </div>
-
-        <!-- Card 5: Home Services -->
-        <div class="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-            <i data-lucide="home" size="24"></i>
-          </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Home Services</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">Professional appointment booking and service listings that save you time.</p>
-          <a href="#pricing" class="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-blue-700">See Pricing →</a>
-        </div>
-
-        <!-- Card 6: Health & Wellness -->
-        <div class="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-            <i data-lucide="heart" size="24"></i>
-          </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Health & Wellness</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">Patient-focused designs that build confidence and simplify bookings.</p>
-          <a href="#pricing" class="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-blue-700">See Pricing →</a>
-        </div>
-
-        <!-- Card 7: Retail & Boutiques -->
-        <div class="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-            <i data-lucide="shopping-bag" size="24"></i>
-          </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Retail & Boutiques</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">Stunning product showcases that drive foot traffic and online interest.</p>
-          <a href="#pricing" class="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-blue-700">See Pricing →</a>
-        </div>
-
-        <!-- Card 8: Professional Services -->
-        <div class="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-            <i data-lucide="briefcase" size="24"></i>
-          </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Professional Services</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">Clarify your expertise and attract high-value clients with precision.</p>
-          <a href="#pricing" class="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-blue-700">See Pricing →</a>
+        <div class="benefit-card animate-in delay-3">
+          <div class="benefit-icon">☕</div>
+          <h3>Hospitality &amp; Cafes</h3>
+          <p>Mouth-watering menus and clear opening times on any device.</p>
+          <a href="#pricing" class="card-link">See Pricing →</a>
         </div>
       </div>
     </div>
@@ -364,136 +300,72 @@
   <!-- ========== HOW IT WORKS ========== -->
   <section id="how-it-works" class="section">
     <div class="container">
-      <div class="text-center">
-        <div class="text-brand-blue font-bold tracking-wider uppercase text-sm mb-2 animate-in">• PROCESS</div>
-        <h2 class="text-3xl md:text-4xl font-heading font-extrabold text-brand-navy mb-16 text-center animate-in">How It Works</h2>
-      </div>
-      
-      <div class="relative grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-        <!-- Connecting Line (Desktop Only) -->
-        <div class="hidden md:block absolute top-8 left-[16%] right-[16%] h-[2px] bg-slate-200 z-0"></div>
-
-        <!-- Step 1 -->
-        <div class="relative z-10 animate-in">
-          <div class="w-16 h-16 mx-auto bg-brand-blue text-white rounded-full flex items-center justify-center text-xl font-bold border-4 border-white shadow-md mb-6">
-            01
+      <div class="section-label animate-in">• PROCESS</div>
+      <h2 class="section-heading animate-in">How It Works</h2>
+      <p class="section-sub animate-in">Three simple steps to get your business online.</p>
+      <div class="process-steps">
+        <div class="process-step animate-in">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Subscribe &amp; Send Details</h3>
+            <p>Sign up for our £35/m plan. Send us your logo, photos, and tell us what you do. That's literally it.</p>
           </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Subscribe & Send Details</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">
-            Sign up for our £35/m plan. Send us your logo, photos, and tell us what you do. That's literally it.
-          </p>
-          <span class="inline-block bg-brand-light text-brand-blue text-xs font-semibold px-4 py-1.5 rounded-full">
-            Takes 5 minutes
-          </span>
+          <div class="step-connector"></div>
         </div>
-
-        <!-- Step 2 -->
-        <div class="relative z-10 animate-in delay-1">
-          <div class="w-16 h-16 mx-auto bg-brand-blue text-white rounded-full flex items-center justify-center text-xl font-bold border-4 border-white shadow-md mb-6">
-            02
+        <div class="process-step animate-in delay-1">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>We Build in 48 Hours</h3>
+            <p>Our team designs your bespoke site. We handle all the technical setup completely — hosting, domain, SSL, the lot.</p>
           </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">We Build in 48 Hours</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">
-            Our team designs your bespoke site. We handle all the technical setup completely — hosting, domain, SSL, the lot.
-          </p>
-          <span class="inline-block bg-brand-light text-brand-blue text-xs font-semibold px-4 py-1.5 rounded-full">
-            48 Hour Turnaround
-          </span>
+          <div class="step-connector"></div>
         </div>
-
-        <!-- Step 3 -->
-        <div class="relative z-10 animate-in delay-2">
-          <div class="w-16 h-16 mx-auto bg-brand-blue text-white rounded-full flex items-center justify-center text-xl font-bold border-4 border-white shadow-md mb-6">
-            03
+        <div class="process-step animate-in delay-2">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Go Live &amp; Get Found</h3>
+            <p>We launch it, manage the hosting, and get your new business site appearing on Google. You just focus on running your business.</p>
           </div>
-          <h3 class="text-xl font-heading font-bold text-brand-navy mb-3">Go Live & Get Found</h3>
-          <p class="text-slate-600 font-body text-sm leading-relaxed mb-6">
-            We launch it, manage the hosting, and get your new business site appearing on Google. You just focus on running your business.
-          </p>
-          <span class="inline-block bg-brand-light text-brand-blue text-xs font-semibold px-4 py-1.5 rounded-full">
-            100% Hands-Off
-          </span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========== PRICING ========== -->
-  <section id="pricing" class="section bg-slate-50/50">
+  <section id="pricing" class="section pricing-section">
     <div class="container">
-      <div class="text-center mb-12">
-        <div class="text-brand-blue font-bold uppercase tracking-wide text-sm mb-2 animate-in">• PRICING</div>
-        <h2 class="text-4xl font-heading font-extrabold text-brand-navy mb-12 animate-in">One Simple Plan. Everything Included.</h2>
+      <div class="pricing-header animate-in">
+        <div class="section-label">• PRICING</div>
+        <h2 class="section-heading">One Simple Plan.<br /><span class="accent">Everything Included.</span></h2>
+        <p class="section-sub">No hidden tiers, no upsells. Just one powerful package that gets your local business online and growing.</p>
       </div>
-
-      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <!-- Left Column: The "Traditional Agency" Anchor Card -->
-        <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 opacity-80 scale-95 md:scale-100 animate-in">
-          <h3 class="text-xl font-heading font-bold text-slate-500 mb-4">Traditional Agency</h3>
-          <div class="flex items-baseline gap-2 mb-2">
-            <span class="text-3xl font-bold text-slate-400 line-through decoration-red-400">£2,500+</span>
-            <span class="text-slate-500">Upfront</span>
+      <div class="pricing-hero-card animate-in">
+        <div class="phc-left">
+          <div class="phc-badge">✦ Most Popular</div>
+          <div class="phc-plan">Professional Shopfront</div>
+          <div class="phc-price">
+            <span class="phc-currency">£</span>
+            <span class="phc-amount">35</span>
+            <span class="phc-period">/month</span>
           </div>
-          <p class="text-sm text-slate-500 mt-2">+ £50/mo hosting & maintenance</p>
-          
-          <ul class="mt-8 space-y-4">
-            <li class="flex items-start gap-3">
-              <i data-lucide="x" class="text-slate-400 w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span class="text-slate-500 text-sm">Slow build times (4-8 weeks)</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="x" class="text-slate-400 w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span class="text-slate-500 text-sm">Hidden technical fees</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="x" class="text-slate-400 w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span class="text-slate-500 text-sm">Do-it-yourself updates</span>
-            </li>
-          </ul>
-
-          <button class="w-full mt-8 py-3 bg-white border border-slate-200 text-slate-400 font-bold rounded-xl cursor-not-allowed">
-            Not for us
-          </button>
+          <p class="phc-desc">Everything you need to compete online — completely hands-off. We build it, host it, manage it.</p>
+          <div class="phc-cta">
+            <a href="#" class="btn-primary btn-lg">Start Your Subscription</a>
+            <span class="phc-note">Cancel anytime · No hidden fees</span>
+          </div>
         </div>
-
-        <!-- Right Column: The "Shopfront Digital" Offer Card -->
-        <div class="relative p-8 bg-white rounded-2xl border-2 border-brand-blue shadow-2xl transform md:-translate-y-4 animate-in delay-1">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-accent text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
-            Most Popular
-          </div>
-          <h3 class="text-2xl font-heading font-bold text-brand-navy">Professional Shopfront</h3>
-          <div class="flex items-baseline gap-2 mt-4">
-            <span class="text-5xl font-extrabold text-brand-navy">£35</span>
-            <span class="text-lg text-slate-500">/month</span>
-          </div>
-          <p class="text-emerald-600 font-semibold text-sm mt-1">Everything included.</p>
-
-          <ul class="mt-8 space-y-4">
-            <li class="flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="text-emerald-500 w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span class="text-slate-700 font-medium">Free Custom Domain & SSL</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="text-emerald-500 w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span class="text-slate-700 font-medium">Bespoke Mobile Design</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="text-emerald-500 w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span class="text-slate-700 font-medium">Monthly Content Updates</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="text-emerald-500 w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span class="text-slate-700 font-medium">Google Maps SEO Setup</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="text-emerald-500 w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span class="text-slate-700 font-medium">48hr Build Time</span>
-            </li>
+        <div class="phc-divider"></div>
+        <div class="phc-right">
+          <ul class="phc-features">
+            <li><span class="phc-check">✓</span><div><strong>Free Custom Domain</strong><span>.co.uk included, yours to keep</span></div></li>
+            <li><span class="phc-check">✓</span><div><strong>Blazing Fast Hosting</strong><span>Enterprise-grade uptime &amp; SSL</span></div></li>
+            <li><span class="phc-check">✓</span><div><strong>Bespoke Mobile Design</strong><span>Built to convert on every device</span></div></li>
+            <li><span class="phc-check">✓</span><div><strong>Monthly Content Updates</strong><span>Text &amp; image changes on request</span></div></li>
+            <li><span class="phc-check">✓</span><div><strong>Google Maps SEO Setup</strong><span>Get found by local customers</span></div></li>
+            <li><span class="phc-check">✓</span><div><strong>Analytics &amp; Reporting</strong><span>Clear monthly performance stats</span></div></li>
+            <li><span class="phc-check">✓</span><div><strong>Priority Support</strong><span>Real humans, fast responses</span></div></li>
+            <li><span class="phc-check">✓</span><div><strong>48hr Build Time</strong><span>Live in two business days</span></div></li>
           </ul>
-
-          <a href="#" class="block w-full mt-8 py-4 bg-brand-blue hover:bg-blue-700 text-white text-center font-bold rounded-xl transition-colors shadow-lg">
-            Start Your Subscription
-          </a>
         </div>
       </div>
     </div>
